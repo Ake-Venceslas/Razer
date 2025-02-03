@@ -1,0 +1,44 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  padding-top: 60px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .flex {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .space-x-4 {
+      flex-wrap: wrap;
+  }
+
+  .hero-section {
+      height: 300px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul li {
+      margin-bottom: 0.5rem;
+  }
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+}

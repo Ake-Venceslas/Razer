@@ -1,0 +1,21 @@
+nav {
+    grid-area: navbar;
+}
+
+main {
+    grid-area: contents;
+}
+
+aside {
+    grid-area: videobar;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "navbar contents contents contents contents contents contents contents contents contents contents contents contents videobar"
+        "navbar contents contents contents contents contents contents contents contents contents contents contents contents videobar"
+        "navbar contents contents contents contents contents contents contents contents contents contents contents contents videobar"
+        "navbar contents contents contents contents contents contents contents contents contents contents contents contents videobar"
+        "navbar contents contents contents contents contents contents contents contents contents contents contents contents videobar";
+}
